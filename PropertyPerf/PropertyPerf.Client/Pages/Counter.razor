@@ -1,0 +1,44 @@
+﻿@page "/counter"
+@rendermode InteractiveWebAssembly
+
+@using Marimer.Blazor.RenderMode
+@using Model
+@using Csla
+
+@inject IDataPortal<TestItem> DataPortal
+@inject RenderModeProvider RenderModeProvider
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<textarea class="form-control" rows="4" readonly>
+    @output
+</textarea>
+
+@code {
+    private int currentCount = 0;
+    private string output = string.Empty;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var renderMode = RenderModeProvider.GetRenderMode(this);
+        if (renderMode == Marimer.Blazor.RenderMode.RenderMode.WebAssemblyInteractive)
+        {
+            var stopwatch = new System.Diagnostics.Stopwatch();
+            stopwatch.Start();
+            var result = await DataPortal.FetchAsync();
+            stopwatch.Stop();
+            output = $"DataPortal.FetchAsync() returned {result} in {stopwatch.ElapsedMilliseconds}ms";
+        }
+    }
+}

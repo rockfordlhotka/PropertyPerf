@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35323.107
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyPerf", "PropertyPerf\PropertyPerf\PropertyPerf.csproj", "{2138DF30-9BEF-4F0E-B4CE-B5020C17E073}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyPerf.Client", "PropertyPerf\PropertyPerf.Client\PropertyPerf.Client.csproj", "{DBC1384C-6AC9-4E7C-880E-7A95063D71CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csla", "..\rdl\csla\Source\Csla\Csla.csproj", "{1209AA93-70DA-4734-A9C2-9FBE1BD75425}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csla.AspNetCore", "..\rdl\csla\Source\Csla.AspNetCore\Csla.AspNetCore.csproj", "{A5923CD5-1532-4345-AAA5-0BBB0EC73303}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csla.Blazor", "..\rdl\csla\Source\Csla.Blazor\Csla.Blazor.csproj", "{8B1BB91A-EBFD-4392-AD92-4A029497E59E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csla.Blazor.WebAssembly", "..\rdl\csla\Source\Csla.Blazor.WebAssembly\Csla.Blazor.WebAssembly.csproj", "{9545893B-BB6B-40C6-B813-1D3569EFB288}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2138DF30-9BEF-4F0E-B4CE-B5020C17E073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2138DF30-9BEF-4F0E-B4CE-B5020C17E073}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2138DF30-9BEF-4F0E-B4CE-B5020C17E073}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2138DF30-9BEF-4F0E-B4CE-B5020C17E073}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBC1384C-6AC9-4E7C-880E-7A95063D71CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBC1384C-6AC9-4E7C-880E-7A95063D71CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBC1384C-6AC9-4E7C-880E-7A95063D71CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBC1384C-6AC9-4E7C-880E-7A95063D71CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1209AA93-70DA-4734-A9C2-9FBE1BD75425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1209AA93-70DA-4734-A9C2-9FBE1BD75425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1209AA93-70DA-4734-A9C2-9FBE1BD75425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1209AA93-70DA-4734-A9C2-9FBE1BD75425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5923CD5-1532-4345-AAA5-0BBB0EC73303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5923CD5-1532-4345-AAA5-0BBB0EC73303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5923CD5-1532-4345-AAA5-0BBB0EC73303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5923CD5-1532-4345-AAA5-0BBB0EC73303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B1BB91A-EBFD-4392-AD92-4A029497E59E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B1BB91A-EBFD-4392-AD92-4A029497E59E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B1BB91A-EBFD-4392-AD92-4A029497E59E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B1BB91A-EBFD-4392-AD92-4A029497E59E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9545893B-BB6B-40C6-B813-1D3569EFB288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9545893B-BB6B-40C6-B813-1D3569EFB288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9545893B-BB6B-40C6-B813-1D3569EFB288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9545893B-BB6B-40C6-B813-1D3569EFB288}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF03122F-B264-4369-941B-D1C7D17E7E4C}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\rdl\csla\Source\Csla.Web.Mvc.Shared\Csla.Web.Mvc.Shared.projitems*{a5923cd5-1532-4345-aaa5-0bbb0ec73303}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal
