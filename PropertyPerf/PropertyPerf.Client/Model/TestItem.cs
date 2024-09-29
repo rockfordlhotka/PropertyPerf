@@ -6,12 +6,808 @@ public class TestItem : BusinessBase<TestItem>
 {
     [Create, Fetch]
     [RunLocal]
-    private void CreateFetch()
-    { }
+    private void CreateFetch([Inject]IChildDataPortalFactory childDataPortalFactory)
+    {
+        TestChild1 = childDataPortalFactory.GetPortal<TestChild1>().CreateChild();
+        TestChild2 = childDataPortalFactory.GetPortal<TestChild2>().CreateChild();
+        TestChild3 = childDataPortalFactory.GetPortal<TestChild3>().CreateChild();
+        TestChild4 = childDataPortalFactory.GetPortal<TestChild4>().CreateChild();
+        TestChild5 = childDataPortalFactory.GetPortal<TestChild5>().CreateChild();
+        TestChild6 = childDataPortalFactory.GetPortal<TestChild6>().CreateChild();
+        TestChild7 = childDataPortalFactory.GetPortal<TestChild7>().CreateChild();
+        TestChild8 = childDataPortalFactory.GetPortal<TestChild8>().CreateChild();
+        TestChild9 = childDataPortalFactory.GetPortal<TestChild9>().CreateChild();
+        TestChild10 = childDataPortalFactory.GetPortal<TestChild10>().CreateChild();
+        TestChild11 = childDataPortalFactory.GetPortal<TestChild11>().CreateChild();
+        TestChild12 = childDataPortalFactory.GetPortal<TestChild12>().CreateChild();
+        TestChild13 = childDataPortalFactory.GetPortal<TestChild13>().CreateChild();
+        TestChild14 = childDataPortalFactory.GetPortal<TestChild14>().CreateChild();
+        TestChild15 = childDataPortalFactory.GetPortal<TestChild15>().CreateChild();
+        TestChild16 = childDataPortalFactory.GetPortal<TestChild16>().CreateChild();
+        TestChild17 = childDataPortalFactory.GetPortal<TestChild17>().CreateChild();
+        TestChild18 = childDataPortalFactory.GetPortal<TestChild18>().CreateChild();
+        TestChild19 = childDataPortalFactory.GetPortal<TestChild19>().CreateChild();
+        TestChild20 = childDataPortalFactory.GetPortal<TestChild20>().CreateChild();
+        TestChild21 = childDataPortalFactory.GetPortal<TestChild21>().CreateChild();
+        TestChild22 = childDataPortalFactory.GetPortal<TestChild22>().CreateChild();
+        TestChild23 = childDataPortalFactory.GetPortal<TestChild23>().CreateChild();
+        TestChild24 = childDataPortalFactory.GetPortal<TestChild24>().CreateChild();
+        TestChild25 = childDataPortalFactory.GetPortal<TestChild25>().CreateChild();
+        TestChild26 = childDataPortalFactory.GetPortal<TestChild26>().CreateChild();
+        TestChild27 = childDataPortalFactory.GetPortal<TestChild27>().CreateChild();
+        TestChild28 = childDataPortalFactory.GetPortal<TestChild28>().CreateChild();
+        TestChild29 = childDataPortalFactory.GetPortal<TestChild29>().CreateChild();
+        TestChild30 = childDataPortalFactory.GetPortal<TestChild30>().CreateChild();
+        TestChild31 = childDataPortalFactory.GetPortal<TestChild31>().CreateChild();
+        TestChild32 = childDataPortalFactory.GetPortal<TestChild32>().CreateChild();
+        TestChild33 = childDataPortalFactory.GetPortal<TestChild33>().CreateChild();
+        TestChild34 = childDataPortalFactory.GetPortal<TestChild34>().CreateChild();
+        TestChild35 = childDataPortalFactory.GetPortal<TestChild35>().CreateChild();
+        TestChild36 = childDataPortalFactory.GetPortal<TestChild36>().CreateChild();
+        TestChild37 = childDataPortalFactory.GetPortal<TestChild37>().CreateChild();
+        TestChild38 = childDataPortalFactory.GetPortal<TestChild38>().CreateChild();
+        TestChild39 = childDataPortalFactory.GetPortal<TestChild39>().CreateChild();
+        TestChild40 = childDataPortalFactory.GetPortal<TestChild40>().CreateChild();
+        TestChild41 = childDataPortalFactory.GetPortal<TestChild41>().CreateChild();
+        TestChild42 = childDataPortalFactory.GetPortal<TestChild42>().CreateChild();
+        TestChild43 = childDataPortalFactory.GetPortal<TestChild43>().CreateChild();
+        TestChild44 = childDataPortalFactory.GetPortal<TestChild44>().CreateChild();
+        TestChild45 = childDataPortalFactory.GetPortal<TestChild45>().CreateChild();
+        TestChild46 = childDataPortalFactory.GetPortal<TestChild46>().CreateChild();
+        TestChild47 = childDataPortalFactory.GetPortal<TestChild47>().CreateChild();
+        TestChild48 = childDataPortalFactory.GetPortal<TestChild48>().CreateChild();
+        TestChild49 = childDataPortalFactory.GetPortal<TestChild49>().CreateChild();
+
+        TestChild50 = childDataPortalFactory.GetPortal<TestChild50>().CreateChild();
+        TestChild51 = childDataPortalFactory.GetPortal<TestChild51>().CreateChild();
+        TestChild52 = childDataPortalFactory.GetPortal<TestChild52>().CreateChild();
+        TestChild53 = childDataPortalFactory.GetPortal<TestChild53>().CreateChild();
+        TestChild54 = childDataPortalFactory.GetPortal<TestChild54>().CreateChild();
+        TestChild55 = childDataPortalFactory.GetPortal<TestChild55>().CreateChild();
+        TestChild56 = childDataPortalFactory.GetPortal<TestChild56>().CreateChild();
+        TestChild57 = childDataPortalFactory.GetPortal<TestChild57>().CreateChild();
+        TestChild58 = childDataPortalFactory.GetPortal<TestChild58>().CreateChild();
+        TestChild59 = childDataPortalFactory.GetPortal<TestChild59>().CreateChild();
+        TestChild60 = childDataPortalFactory.GetPortal<TestChild60>().CreateChild();
+        TestChild61 = childDataPortalFactory.GetPortal<TestChild61>().CreateChild();
+        TestChild62 = childDataPortalFactory.GetPortal<TestChild62>().CreateChild();
+        TestChild63 = childDataPortalFactory.GetPortal<TestChild63>().CreateChild();
+        TestChild64 = childDataPortalFactory.GetPortal<TestChild64>().CreateChild();
+        TestChild65 = childDataPortalFactory.GetPortal<TestChild65>().CreateChild();
+        TestChild66 = childDataPortalFactory.GetPortal<TestChild66>().CreateChild();
+        TestChild67 = childDataPortalFactory.GetPortal<TestChild67>().CreateChild();
+        TestChild68 = childDataPortalFactory.GetPortal<TestChild68>().CreateChild();
+        TestChild69 = childDataPortalFactory.GetPortal<TestChild69>().CreateChild();
+        TestChild70 = childDataPortalFactory.GetPortal<TestChild70>().CreateChild();
+        TestChild71 = childDataPortalFactory.GetPortal<TestChild71>().CreateChild();
+        TestChild72 = childDataPortalFactory.GetPortal<TestChild72>().CreateChild();
+        TestChild73 = childDataPortalFactory.GetPortal<TestChild73>().CreateChild();
+        TestChild74 = childDataPortalFactory.GetPortal<TestChild74>().CreateChild();
+        TestChild75 = childDataPortalFactory.GetPortal<TestChild75>().CreateChild();
+        TestChild76 = childDataPortalFactory.GetPortal<TestChild76>().CreateChild();
+        TestChild77 = childDataPortalFactory.GetPortal<TestChild77>().CreateChild();
+        TestChild78 = childDataPortalFactory.GetPortal<TestChild78>().CreateChild();
+        TestChild79 = childDataPortalFactory.GetPortal<TestChild79>().CreateChild();
+        TestChild80 = childDataPortalFactory.GetPortal<TestChild80>().CreateChild();
+        TestChild81 = childDataPortalFactory.GetPortal<TestChild81>().CreateChild();
+
+        TestChild82 = childDataPortalFactory.GetPortal<TestChild82>().CreateChild();
+        TestChild83 = childDataPortalFactory.GetPortal<TestChild83>().CreateChild();
+        TestChild84 = childDataPortalFactory.GetPortal<TestChild84>().CreateChild();
+        TestChild85 = childDataPortalFactory.GetPortal<TestChild85>().CreateChild();
+        TestChild86 = childDataPortalFactory.GetPortal<TestChild86>().CreateChild();
+        TestChild87 = childDataPortalFactory.GetPortal<TestChild87>().CreateChild();
+        TestChild88 = childDataPortalFactory.GetPortal<TestChild88>().CreateChild();
+        TestChild89 = childDataPortalFactory.GetPortal<TestChild89>().CreateChild();
+        TestChild90 = childDataPortalFactory.GetPortal<TestChild90>().CreateChild();
+        TestChild91 = childDataPortalFactory.GetPortal<TestChild91>().CreateChild();
+        TestChild92 = childDataPortalFactory.GetPortal<TestChild92>().CreateChild();
+        TestChild93 = childDataPortalFactory.GetPortal<TestChild93>().CreateChild();
+        TestChild94 = childDataPortalFactory.GetPortal<TestChild94>().CreateChild();
+        TestChild95 = childDataPortalFactory.GetPortal<TestChild95>().CreateChild();
+        TestChild96 = childDataPortalFactory.GetPortal<TestChild96>().CreateChild();
+        TestChild97 = childDataPortalFactory.GetPortal<TestChild97>().CreateChild();
+        TestChild98 = childDataPortalFactory.GetPortal<TestChild98>().CreateChild();
+        TestChild99 = childDataPortalFactory.GetPortal<TestChild99>().CreateChild();
+
+    }
 
     public override string ToString()
     {
         return "TestItem";
+    }
+
+    public static readonly PropertyInfo<TestChild1> TestChild1Property = RegisterProperty<TestChild1>(nameof(TestChild1));
+    public TestChild1 TestChild1
+    {
+        get => GetProperty(TestChild1Property);
+        set => SetProperty(TestChild1Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild2> TestChild2Property = RegisterProperty<TestChild2>(nameof(TestChild2));
+    public TestChild2 TestChild2
+    {
+        get => GetProperty(TestChild2Property);
+        set => SetProperty(TestChild2Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild3> TestChild3Property = RegisterProperty<TestChild3>(nameof(TestChild3));
+    public TestChild3 TestChild3
+    {
+        get => GetProperty(TestChild3Property);
+        set => SetProperty(TestChild3Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild4> TestChild4Property = RegisterProperty<TestChild4>(nameof(TestChild4));
+    public TestChild4 TestChild4
+    {
+        get => GetProperty(TestChild4Property);
+        set => SetProperty(TestChild4Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild5> TestChild5Property = RegisterProperty<TestChild5>(nameof(TestChild5));
+    public TestChild5 TestChild5
+    {
+        get => GetProperty(TestChild5Property);
+        set => SetProperty(TestChild5Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild6> TestChild6Property = RegisterProperty<TestChild6>(nameof(TestChild6));
+    public TestChild6 TestChild6
+    {
+        get => GetProperty(TestChild6Property);
+        set => SetProperty(TestChild6Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild7> TestChild7Property = RegisterProperty<TestChild7>(nameof(TestChild7));
+    public TestChild7 TestChild7
+    {
+        get => GetProperty(TestChild7Property);
+        set => SetProperty(TestChild7Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild8> TestChild8Property = RegisterProperty<TestChild8>(nameof(TestChild8));
+    public TestChild8 TestChild8
+    {
+        get => GetProperty(TestChild8Property);
+        set => SetProperty(TestChild8Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild9> TestChild9Property = RegisterProperty<TestChild9>(nameof(TestChild9));
+    public TestChild9 TestChild9
+    {
+        get => GetProperty(TestChild9Property);
+        set => SetProperty(TestChild9Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild10> TestChild10Property = RegisterProperty<TestChild10>(nameof(TestChild10));
+    public TestChild10 TestChild10
+    {
+        get => GetProperty(TestChild10Property);
+        set => SetProperty(TestChild10Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild11> TestChild11Property = RegisterProperty<TestChild11>(nameof(TestChild11));
+    public TestChild11 TestChild11
+    {
+        get => GetProperty(TestChild11Property);
+        set => SetProperty(TestChild11Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild12> TestChild12Property = RegisterProperty<TestChild12>(nameof(TestChild12));
+    public TestChild12 TestChild12
+    {
+        get => GetProperty(TestChild12Property);
+        set => SetProperty(TestChild12Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild13> TestChild13Property = RegisterProperty<TestChild13>(nameof(TestChild13));
+    public TestChild13 TestChild13
+    {
+        get => GetProperty(TestChild13Property);
+        set => SetProperty(TestChild13Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild14> TestChild14Property = RegisterProperty<TestChild14>(nameof(TestChild14));
+    public TestChild14 TestChild14
+    {
+        get => GetProperty(TestChild14Property);
+        set => SetProperty(TestChild14Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild15> TestChild15Property = RegisterProperty<TestChild15>(nameof(TestChild15));
+    public TestChild15 TestChild15
+    {
+        get => GetProperty(TestChild15Property);
+        set => SetProperty(TestChild15Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild16> TestChild16Property = RegisterProperty<TestChild16>(nameof(TestChild16));
+    public TestChild16 TestChild16
+    {
+        get => GetProperty(TestChild16Property);
+        set => SetProperty(TestChild16Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild17> TestChild17Property = RegisterProperty<TestChild17>(nameof(TestChild17));
+    public TestChild17 TestChild17
+    {
+        get => GetProperty(TestChild17Property);
+        set => SetProperty(TestChild17Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild18> TestChild18Property = RegisterProperty<TestChild18>(nameof(TestChild18));
+    public TestChild18 TestChild18
+    {
+        get => GetProperty(TestChild18Property);
+        set => SetProperty(TestChild18Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild19> TestChild19Property = RegisterProperty<TestChild19>(nameof(TestChild19));
+    public TestChild19 TestChild19
+    {
+        get => GetProperty(TestChild19Property);
+        set => SetProperty(TestChild19Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild20> TestChild20Property = RegisterProperty<TestChild20>(nameof(TestChild20));
+    public TestChild20 TestChild20
+    {
+        get => GetProperty(TestChild20Property);
+        set => SetProperty(TestChild20Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild21> TestChild21Property = RegisterProperty<TestChild21>(nameof(TestChild21));
+    public TestChild21 TestChild21
+    {
+        get => GetProperty(TestChild21Property);
+        set => SetProperty(TestChild21Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild22> TestChild22Property = RegisterProperty<TestChild22>(nameof(TestChild22));
+    public TestChild22 TestChild22
+    {
+        get => GetProperty(TestChild22Property);
+        set => SetProperty(TestChild22Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild23> TestChild23Property = RegisterProperty<TestChild23>(nameof(TestChild23));
+    public TestChild23 TestChild23
+    {
+        get => GetProperty(TestChild23Property);
+        set => SetProperty(TestChild23Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild24> TestChild24Property = RegisterProperty<TestChild24>(nameof(TestChild24));
+    public TestChild24 TestChild24
+    {
+        get => GetProperty(TestChild24Property);
+        set => SetProperty(TestChild24Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild25> TestChild25Property = RegisterProperty<TestChild25>(nameof(TestChild25));
+    public TestChild25 TestChild25
+    {
+        get => GetProperty(TestChild25Property);
+        set => SetProperty(TestChild25Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild26> TestChild26Property = RegisterProperty<TestChild26>(nameof(TestChild26));
+    public TestChild26 TestChild26
+    {
+        get => GetProperty(TestChild26Property);
+        set => SetProperty(TestChild26Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild27> TestChild27Property = RegisterProperty<TestChild27>(nameof(TestChild27));
+    public TestChild27 TestChild27
+    {
+        get => GetProperty(TestChild27Property);
+        set => SetProperty(TestChild27Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild28> TestChild28Property = RegisterProperty<TestChild28>(nameof(TestChild28));
+    public TestChild28 TestChild28
+    {
+        get => GetProperty(TestChild28Property);
+        set => SetProperty(TestChild28Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild29> TestChild29Property = RegisterProperty<TestChild29>(nameof(TestChild29));
+    public TestChild29 TestChild29
+    {
+        get => GetProperty(TestChild29Property);
+        set => SetProperty(TestChild29Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild30> TestChild30Property = RegisterProperty<TestChild30>(nameof(TestChild30));
+    public TestChild30 TestChild30
+    {
+        get => GetProperty(TestChild30Property);
+        set => SetProperty(TestChild30Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild31> TestChild31Property = RegisterProperty<TestChild31>(nameof(TestChild31));
+    public TestChild31 TestChild31
+    {
+        get => GetProperty(TestChild31Property);
+        set => SetProperty(TestChild31Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild32> TestChild32Property = RegisterProperty<TestChild32>(nameof(TestChild32));
+    public TestChild32 TestChild32
+    {
+        get => GetProperty(TestChild32Property);
+        set => SetProperty(TestChild32Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild33> TestChild33Property = RegisterProperty<TestChild33>(nameof(TestChild33));
+    public TestChild33 TestChild33
+    {
+        get => GetProperty(TestChild33Property);
+        set => SetProperty(TestChild33Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild34> TestChild34Property = RegisterProperty<TestChild34>(nameof(TestChild34));
+    public TestChild34 TestChild34
+    {
+        get => GetProperty(TestChild34Property);
+        set => SetProperty(TestChild34Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild35> TestChild35Property = RegisterProperty<TestChild35>(nameof(TestChild35));
+    public TestChild35 TestChild35
+    {
+        get => GetProperty(TestChild35Property);
+        set => SetProperty(TestChild35Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild36> TestChild36Property = RegisterProperty<TestChild36>(nameof(TestChild36));
+    public TestChild36 TestChild36
+    {
+        get => GetProperty(TestChild36Property);
+        set => SetProperty(TestChild36Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild37> TestChild37Property = RegisterProperty<TestChild37>(nameof(TestChild37));
+    public TestChild37 TestChild37
+    {
+        get => GetProperty(TestChild37Property);
+        set => SetProperty(TestChild37Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild38> TestChild38Property = RegisterProperty<TestChild38>(nameof(TestChild38));
+    public TestChild38 TestChild38
+    {
+        get => GetProperty(TestChild38Property);
+        set => SetProperty(TestChild38Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild39> TestChild39Property = RegisterProperty<TestChild39>(nameof(TestChild39));
+    public TestChild39 TestChild39
+    {
+        get => GetProperty(TestChild39Property);
+        set => SetProperty(TestChild39Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild40> TestChild40Property = RegisterProperty<TestChild40>(nameof(TestChild40));
+    public TestChild40 TestChild40
+    {
+        get => GetProperty(TestChild40Property);
+        set => SetProperty(TestChild40Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild41> TestChild41Property = RegisterProperty<TestChild41>(nameof(TestChild41));
+    public TestChild41 TestChild41
+    {
+        get => GetProperty(TestChild41Property);
+        set => SetProperty(TestChild41Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild42> TestChild42Property = RegisterProperty<TestChild42>(nameof(TestChild42));
+    public TestChild42 TestChild42
+    {
+        get => GetProperty(TestChild42Property);
+        set => SetProperty(TestChild42Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild43> TestChild43Property = RegisterProperty<TestChild43>(nameof(TestChild43));
+    public TestChild43 TestChild43
+    {
+        get => GetProperty(TestChild43Property);
+        set => SetProperty(TestChild43Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild44> TestChild44Property = RegisterProperty<TestChild44>(nameof(TestChild44));
+    public TestChild44 TestChild44
+    {
+        get => GetProperty(TestChild44Property);
+        set => SetProperty(TestChild44Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild45> TestChild45Property = RegisterProperty<TestChild45>(nameof(TestChild45));
+    public TestChild45 TestChild45
+    {
+        get => GetProperty(TestChild45Property);
+        set => SetProperty(TestChild45Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild46> TestChild46Property = RegisterProperty<TestChild46>(nameof(TestChild46));
+    public TestChild46 TestChild46
+    {
+        get => GetProperty(TestChild46Property);
+        set => SetProperty(TestChild46Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild47> TestChild47Property = RegisterProperty<TestChild47>(nameof(TestChild47));
+    public TestChild47 TestChild47
+    {
+        get => GetProperty(TestChild47Property);
+        set => SetProperty(TestChild47Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild48> TestChild48Property = RegisterProperty<TestChild48>(nameof(TestChild48));
+    public TestChild48 TestChild48
+    {
+        get => GetProperty(TestChild48Property);
+        set => SetProperty(TestChild48Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild49> TestChild49Property = RegisterProperty<TestChild49>(nameof(TestChild49));
+    public TestChild49 TestChild49
+    {
+        get => GetProperty(TestChild49Property);
+        set => SetProperty(TestChild49Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild50> TestChild50Property = RegisterProperty<TestChild50>(nameof(TestChild50));
+    public TestChild50 TestChild50
+    {
+        get => GetProperty(TestChild50Property);
+        set => SetProperty(TestChild50Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild51> TestChild51Property = RegisterProperty<TestChild51>(nameof(TestChild51));
+    public TestChild51 TestChild51
+    {
+        get => GetProperty(TestChild51Property);
+        set => SetProperty(TestChild51Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild52> TestChild52Property = RegisterProperty<TestChild52>(nameof(TestChild52));
+    public TestChild52 TestChild52
+    {
+        get => GetProperty(TestChild52Property);
+        set => SetProperty(TestChild52Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild53> TestChild53Property = RegisterProperty<TestChild53>(nameof(TestChild53));
+    public TestChild53 TestChild53
+    {
+        get => GetProperty(TestChild53Property);
+        set => SetProperty(TestChild53Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild54> TestChild54Property = RegisterProperty<TestChild54>(nameof(TestChild54));
+    public TestChild54 TestChild54
+    {
+        get => GetProperty(TestChild54Property);
+        set => SetProperty(TestChild54Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild55> TestChild55Property = RegisterProperty<TestChild55>(nameof(TestChild55));
+    public TestChild55 TestChild55
+    {
+        get => GetProperty(TestChild55Property);
+        set => SetProperty(TestChild55Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild56> TestChild56Property = RegisterProperty<TestChild56>(nameof(TestChild56));
+    public TestChild56 TestChild56
+    {
+        get => GetProperty(TestChild56Property);
+        set => SetProperty(TestChild56Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild57> TestChild57Property = RegisterProperty<TestChild57>(nameof(TestChild57));
+    public TestChild57 TestChild57
+    {
+        get => GetProperty(TestChild57Property);
+        set => SetProperty(TestChild57Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild58> TestChild58Property = RegisterProperty<TestChild58>(nameof(TestChild58));
+    public TestChild58 TestChild58
+    {
+        get => GetProperty(TestChild58Property);
+        set => SetProperty(TestChild58Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild59> TestChild59Property = RegisterProperty<TestChild59>(nameof(TestChild59));
+    public TestChild59 TestChild59
+    {
+        get => GetProperty(TestChild59Property);
+        set => SetProperty(TestChild59Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild60> TestChild60Property = RegisterProperty<TestChild60>(nameof(TestChild60));
+    public TestChild60 TestChild60
+    {
+        get => GetProperty(TestChild60Property);
+        set => SetProperty(TestChild60Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild61> TestChild61Property = RegisterProperty<TestChild61>(nameof(TestChild61));
+    public TestChild61 TestChild61
+    {
+        get => GetProperty(TestChild61Property);
+        set => SetProperty(TestChild61Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild62> TestChild62Property = RegisterProperty<TestChild62>(nameof(TestChild62));
+    public TestChild62 TestChild62
+    {
+        get => GetProperty(TestChild62Property);
+        set => SetProperty(TestChild62Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild63> TestChild63Property = RegisterProperty<TestChild63>(nameof(TestChild63));
+    public TestChild63 TestChild63
+    {
+        get => GetProperty(TestChild63Property);
+        set => SetProperty(TestChild63Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild64> TestChild64Property = RegisterProperty<TestChild64>(nameof(TestChild64));
+    public TestChild64 TestChild64
+    {
+        get => GetProperty(TestChild64Property);
+        set => SetProperty(TestChild64Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild65> TestChild65Property = RegisterProperty<TestChild65>(nameof(TestChild65));
+    public TestChild65 TestChild65
+    {
+        get => GetProperty(TestChild65Property);
+        set => SetProperty(TestChild65Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild66> TestChild66Property = RegisterProperty<TestChild66>(nameof(TestChild66));
+    public TestChild66 TestChild66
+    {
+        get => GetProperty(TestChild66Property);
+        set => SetProperty(TestChild66Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild67> TestChild67Property = RegisterProperty<TestChild67>(nameof(TestChild67));
+    public TestChild67 TestChild67
+    {
+        get => GetProperty(TestChild67Property);
+        set => SetProperty(TestChild67Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild68> TestChild68Property = RegisterProperty<TestChild68>(nameof(TestChild68));
+    public TestChild68 TestChild68
+    {
+        get => GetProperty(TestChild68Property);
+        set => SetProperty(TestChild68Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild69> TestChild69Property = RegisterProperty<TestChild69>(nameof(TestChild69));
+    public TestChild69 TestChild69
+    {
+        get => GetProperty(TestChild69Property);
+        set => SetProperty(TestChild69Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild70> TestChild70Property = RegisterProperty<TestChild70>(nameof(TestChild70));
+    public TestChild70 TestChild70
+    {
+        get => GetProperty(TestChild70Property);
+        set => SetProperty(TestChild70Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild71> TestChild71Property = RegisterProperty<TestChild71>(nameof(TestChild71));
+    public TestChild71 TestChild71
+    {
+        get => GetProperty(TestChild71Property);
+        set => SetProperty(TestChild71Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild72> TestChild72Property = RegisterProperty<TestChild72>(nameof(TestChild72));
+    public TestChild72 TestChild72
+    {
+        get => GetProperty(TestChild72Property);
+        set => SetProperty(TestChild72Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild73> TestChild73Property = RegisterProperty<TestChild73>(nameof(TestChild73));
+    public TestChild73 TestChild73
+    {
+        get => GetProperty(TestChild73Property);
+        set => SetProperty(TestChild73Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild74> TestChild74Property = RegisterProperty<TestChild74>(nameof(TestChild74));
+    public TestChild74 TestChild74
+    {
+        get => GetProperty(TestChild74Property);
+        set => SetProperty(TestChild74Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild75> TestChild75Property = RegisterProperty<TestChild75>(nameof(TestChild75));
+    public TestChild75 TestChild75
+    {
+        get => GetProperty(TestChild75Property);
+        set => SetProperty(TestChild75Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild76> TestChild76Property = RegisterProperty<TestChild76>(nameof(TestChild76));
+    public TestChild76 TestChild76
+    {
+        get => GetProperty(TestChild76Property);
+        set => SetProperty(TestChild76Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild77> TestChild77Property = RegisterProperty<TestChild77>(nameof(TestChild77));
+    public TestChild77 TestChild77
+    {
+        get => GetProperty(TestChild77Property);
+        set => SetProperty(TestChild77Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild78> TestChild78Property = RegisterProperty<TestChild78>(nameof(TestChild78));
+    public TestChild78 TestChild78
+    {
+        get => GetProperty(TestChild78Property);
+        set => SetProperty(TestChild78Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild79> TestChild79Property = RegisterProperty<TestChild79>(nameof(TestChild79));
+    public TestChild79 TestChild79
+    {
+        get => GetProperty(TestChild79Property);
+        set => SetProperty(TestChild79Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild80> TestChild80Property = RegisterProperty<TestChild80>(nameof(TestChild80));
+    public TestChild80 TestChild80
+    {
+        get => GetProperty(TestChild80Property);
+        set => SetProperty(TestChild80Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild81> TestChild81Property = RegisterProperty<TestChild81>(nameof(TestChild81));
+    public TestChild81 TestChild81
+    {
+        get => GetProperty(TestChild81Property);
+        set => SetProperty(TestChild81Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild82> TestChild82Property = RegisterProperty<TestChild82>(nameof(TestChild82));
+    public TestChild82 TestChild82
+    {
+        get => GetProperty(TestChild82Property);
+        set => SetProperty(TestChild82Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild83> TestChild83Property = RegisterProperty<TestChild83>(nameof(TestChild83));
+    public TestChild83 TestChild83
+    {
+        get => GetProperty(TestChild83Property);
+        set => SetProperty(TestChild83Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild84> TestChild84Property = RegisterProperty<TestChild84>(nameof(TestChild84));
+    public TestChild84 TestChild84
+    {
+        get => GetProperty(TestChild84Property);
+        set => SetProperty(TestChild84Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild85> TestChild85Property = RegisterProperty<TestChild85>(nameof(TestChild85));
+    public TestChild85 TestChild85
+    {
+        get => GetProperty(TestChild85Property);
+        set => SetProperty(TestChild85Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild86> TestChild86Property = RegisterProperty<TestChild86>(nameof(TestChild86));
+    public TestChild86 TestChild86
+    {
+        get => GetProperty(TestChild86Property);
+        set => SetProperty(TestChild86Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild87> TestChild87Property = RegisterProperty<TestChild87>(nameof(TestChild87));
+    public TestChild87 TestChild87
+    {
+        get => GetProperty(TestChild87Property);
+        set => SetProperty(TestChild87Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild88> TestChild88Property = RegisterProperty<TestChild88>(nameof(TestChild88));
+    public TestChild88 TestChild88
+    {
+        get => GetProperty(TestChild88Property);
+        set => SetProperty(TestChild88Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild89> TestChild89Property = RegisterProperty<TestChild89>(nameof(TestChild89));
+    public TestChild89 TestChild89
+    {
+        get => GetProperty(TestChild89Property);
+        set => SetProperty(TestChild89Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild90> TestChild90Property = RegisterProperty<TestChild90>(nameof(TestChild90));
+    public TestChild90 TestChild90
+    {
+        get => GetProperty(TestChild90Property);
+        set => SetProperty(TestChild90Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild91> TestChild91Property = RegisterProperty<TestChild91>(nameof(TestChild91));
+    public TestChild91 TestChild91
+    {
+        get => GetProperty(TestChild91Property);
+        set => SetProperty(TestChild91Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild92> TestChild92Property = RegisterProperty<TestChild92>(nameof(TestChild92));
+    public TestChild92 TestChild92
+    {
+        get => GetProperty(TestChild92Property);
+        set => SetProperty(TestChild92Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild93> TestChild93Property = RegisterProperty<TestChild93>(nameof(TestChild93));
+    public TestChild93 TestChild93
+    {
+        get => GetProperty(TestChild93Property);
+        set => SetProperty(TestChild93Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild94> TestChild94Property = RegisterProperty<TestChild94>(nameof(TestChild94));
+    public TestChild94 TestChild94
+    {
+        get => GetProperty(TestChild94Property);
+        set => SetProperty(TestChild94Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild95> TestChild95Property = RegisterProperty<TestChild95>(nameof(TestChild95));
+    public TestChild95 TestChild95
+    {
+        get => GetProperty(TestChild95Property);
+        set => SetProperty(TestChild95Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild96> TestChild96Property = RegisterProperty<TestChild96>(nameof(TestChild96));
+    public TestChild96 TestChild96
+    {
+        get => GetProperty(TestChild96Property);
+        set => SetProperty(TestChild96Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild97> TestChild97Property = RegisterProperty<TestChild97>(nameof(TestChild97));
+    public TestChild97 TestChild97
+    {
+        get => GetProperty(TestChild97Property);
+        set => SetProperty(TestChild97Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild98> TestChild98Property = RegisterProperty<TestChild98>(nameof(TestChild98));
+    public TestChild98 TestChild98
+    {
+        get => GetProperty(TestChild98Property);
+        set => SetProperty(TestChild98Property, value);
+    }
+
+    public static readonly PropertyInfo<TestChild99> TestChild99Property = RegisterProperty<TestChild99>(nameof(TestChild99));
+    public TestChild99 TestChild99
+    {
+        get => GetProperty(TestChild99Property);
+        set => SetProperty(TestChild99Property, value);
     }
 
     public static readonly PropertyInfo<ChildType1> Child1Property = RegisterProperty<ChildType1>(nameof(Child1));
