@@ -39,6 +39,11 @@
             var result = await DataPortal.FetchAsync();
             stopwatch.Stop();
             output = $"DataPortal.FetchAsync() returned {result} in {stopwatch.ElapsedMilliseconds}ms";
+
+            stopwatch.Restart();
+            result = result.Clone();
+            stopwatch.Stop();
+            output += $"\r\nresult.Clone() returned {result} in {stopwatch.ElapsedMilliseconds}ms";
         }
     }
 }

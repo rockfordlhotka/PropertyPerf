@@ -6,8 +6,9 @@ public class TestItem : BusinessBase<TestItem>
 {
     [Create, Fetch]
     [RunLocal]
-    private void CreateFetch([Inject]IChildDataPortalFactory childDataPortalFactory)
+    private async Task CreateFetch([Inject]IChildDataPortalFactory childDataPortalFactory)
     {
+        Child1List = await childDataPortalFactory.GetPortal<ChildList>().FetchChildAsync();
         TestChild1 = childDataPortalFactory.GetPortal<TestChild1>().CreateChild();
         TestChild2 = childDataPortalFactory.GetPortal<TestChild2>().CreateChild();
         TestChild3 = childDataPortalFactory.GetPortal<TestChild3>().CreateChild();
@@ -115,6 +116,13 @@ public class TestItem : BusinessBase<TestItem>
     public override string ToString()
     {
         return "TestItem";
+    }
+
+    public static readonly PropertyInfo<ChildList> Child1ListProperty = RegisterProperty<ChildList>(nameof(Child1List));
+    public ChildList Child1List
+    {
+        get => GetProperty(Child1ListProperty);
+        set => SetProperty(Child1ListProperty, value);
     }
 
     public static readonly PropertyInfo<TestChild1> TestChild1Property = RegisterProperty<TestChild1>(nameof(TestChild1));

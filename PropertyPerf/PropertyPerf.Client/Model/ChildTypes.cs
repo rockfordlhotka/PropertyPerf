@@ -4,6 +4,18 @@ namespace PropertyPerf.Client.Model;
 
 public class ChildType1 : BusinessBase<ChildType1>
 {
+    public static readonly PropertyInfo<int> IdProperty = RegisterProperty<int>(nameof(Id));
+    public int Id
+    {
+        get => GetProperty(IdProperty);
+        set => SetProperty(IdProperty, value);
+    }
+
+    [FetchChild]
+    private async Task Fetch(int id)
+    {
+        LoadProperty(IdProperty, id);
+    }
 }
 
 public class ChildType2 : BusinessBase<ChildType2>
